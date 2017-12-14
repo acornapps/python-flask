@@ -1,12 +1,12 @@
-appname: django
+appname: flask
 builds: []
 variables:
 - name: Image
-  value: builder-dev.acornsoft.io/apps/python-django:python3.6
+  value: builder-dev.acornsoft.io/apps/flask:dJ7DNTALL
 - name: Replicas
   value: "1"
 - name: AppName
-  value: django
+  value: flask
 - name: RequestCpu
   value: 0m
 - name: RequestMemory
@@ -15,4 +15,6 @@ variables:
   value: 0m
 - name: LimitMemory
   value: 0Mi
+- name: UpdatedImage
+  value: builder-dev.acornsoft.io/apps/flask:dJ7DNTALL
 addons: []

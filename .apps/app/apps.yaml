@@ -8,9 +8,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 8000
+  - port: 8080
     protocol: TCP
-    targetPort: 8000
+    targetPort: 8080
   selector:
     apps: {{.AppName}}
 ---
@@ -45,4 +45,4 @@ spec:
             cpu: {{.RequestCpu}}
             memory: {{.RequestMemory}}
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
