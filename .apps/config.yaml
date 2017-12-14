@@ -1,0 +1,18 @@
+appname: django
+builds: []
+variables:
+- name: Image
+  value: builder-dev.acornsoft.io/apps/python-django:python3.6
+- name: Replicas
+  value: "1"
+- name: AppName
+  value: django
+- name: RequestCpu
+  value: 0m
+- name: RequestMemory
+  value: 0Mi
+- name: LimitCpu
+  value: 0m
+- name: LimitMemory
+  value: 0Mi
+addons: []
