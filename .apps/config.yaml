@@ -1,12 +1,9 @@
-appname: flask
 builds: []
 variables:
 - name: Image
-  value: builder-dev.acornsoft.io/apps/flask:dJ7DNTALL
+  value: builder-dev.acornsoft.io/apps/flask:latest
 - name: Replicas
   value: "1"
-- name: AppName
-  value: flask
 - name: RequestCpu
   value: 0m
 - name: RequestMemory
@@ -15,6 +12,4 @@ variables:
   value: 0m
 - name: LimitMemory
   value: 0Mi
-- name: UpdatedImage
-  value: builder-dev.acornsoft.io/apps/flask:dJ7DNTALL
 addons: []
